@@ -12,4 +12,8 @@ class PlantCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var lblPlantPrice: UILabel!
     
+    func setUpCell(photo: UIImage, price: Double) {
+        imagePlant.image = photo
+        lblPlantPrice.text = "\(price) €"
+    }
 }

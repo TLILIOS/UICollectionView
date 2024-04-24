@@ -14,6 +14,8 @@
 		576108AB2BD95A3E004B6974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576108AA2BD95A3E004B6974 /* Assets.xcassets */; };
 		576108AE2BD95A3E004B6974 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 576108AD2BD95A3E004B6974 /* Base */; };
 		576108B62BD960F6004B6974 /* PlantCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576108B52BD960F6004B6974 /* PlantCollectionViewCell.swift */; };
+		576108B82BD97584004B6974 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576108B72BD97584004B6974 /* HomeViewController.swift */; };
+		576108BA2BD975C3004B6974 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576108B92BD975C3004B6974 /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		576108AD2BD95A3E004B6974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		576108AF2BD95A3E004B6974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		576108B52BD960F6004B6974 /* PlantCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantCollectionViewCell.swift; sourceTree = "<group>"; };
+		576108B72BD97584004B6974 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		576108B92BD975C3004B6974 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				576108AA2BD95A3E004B6974 /* Assets.xcassets */,
 				576108AC2BD95A3E004B6974 /* LaunchScreen.storyboard */,
 				576108AF2BD95A3E004B6974 /* Info.plist */,
+				576108B72BD97584004B6974 /* HomeViewController.swift */,
+				576108B92BD975C3004B6974 /* HomeCollectionViewCell.swift */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -141,10 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				576108B82BD97584004B6974 /* HomeViewController.swift in Sources */,
 				576108A62BD95A3C004B6974 /* ViewController.swift in Sources */,
 				576108A22BD95A3C004B6974 /* AppDelegate.swift in Sources */,
 				576108B62BD960F6004B6974 /* PlantCollectionViewCell.swift in Sources */,
 				576108A42BD95A3C004B6974 /* SceneDelegate.swift in Sources */,
+				576108BA2BD975C3004B6974 /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
