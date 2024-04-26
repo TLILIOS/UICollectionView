@@ -9,7 +9,12 @@ import UIKit
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var collectionView: UICollectionView!
-    var arrayProductPhoto = [UIImage(named: "img_product1")!]
+    
+    @IBOutlet weak var pageControl: UIPageControl!
+    var arrayProductPhoto = [UIImage(named: "BMW1")!,UIImage(named: "BMW2")!, UIImage(named: "BMW3")!, UIImage(named: "BMW4")!, UIImage(named: "BMW5")!]
+    
+    var timer: Timer?
+    var currentIndexCell = 0
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         arrayProductPhoto.count
     }
@@ -32,9 +37,22 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
-        
-       
+        pageControl.numberOfPages = arrayProductPhoto.count
+        startTimer()
     }
     
-
+    func startTimer() {
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(nextPhoto), userInfo: "ok", repeats: true)
+    }
+    @objc func nextPhoto() {
+        if currentIndexCell < arrayProductPhoto.count - 1 {
+            currentIndexCell += 1
+        } else {
+            currentIndexCell = 0
+        }
+      
+        collectionView.scrollToItem(at: IndexPath(item: currentIndexCell, section: 0), at: .centeredHorizontally, animated: true)
+        pageControl.currentPage = currentIndexCell
+    }
+    
 }
