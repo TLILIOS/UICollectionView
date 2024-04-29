@@ -76,11 +76,11 @@
 			children = (
 				576108A12BD95A3C004B6974 /* AppDelegate.swift */,
 				576108A32BD95A3C004B6974 /* SceneDelegate.swift */,
+				576108A72BD95A3C004B6974 /* Main.storyboard */,
 				57ABB4292BDE459600CF15A9 /* Photos */,
 				57ABB4282BDE457400CF15A9 /* Products */,
 				57ABB42A2BDE45AE00CF15A9 /* Home */,
 				57ABB42B2BDE45F000CF15A9 /* Plants */,
-				576108A72BD95A3C004B6974 /* Main.storyboard */,
 				576108AA2BD95A3E004B6974 /* Assets.xcassets */,
 				576108AC2BD95A3E004B6974 /* LaunchScreen.storyboard */,
 				576108AF2BD95A3E004B6974 /* Info.plist */,
