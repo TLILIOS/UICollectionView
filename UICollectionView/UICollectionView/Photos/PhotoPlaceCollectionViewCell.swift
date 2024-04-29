@@ -8,7 +8,7 @@
 import UIKit
 
 class PhotoPlaceCollectionViewCell: UICollectionViewCell {
-    @IBOutlet weak var photoCollectionView: UIImageView!
+    @IBOutlet weak var imgPlacePhoto: UIImageView!
     
     
 }
